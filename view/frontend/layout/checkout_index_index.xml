@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
+        <!-- checkout.steps.billing&#45;step.payment.payments&#45;list.authorizenet_directpost -->
         <referenceBlock name="checkout.root">
             <arguments>
                 <argument name="jsLayout" xsi:type="array">
@@ -13,18 +14,14 @@
                                             <item name="children" xsi:type="array">
                                                 <item name="payment" xsi:type="array">
                                                     <item name="children" xsi:type="array">
-                                                        <item name="renders" xsi:type="array">
+                                                        <item name="payments-list" xsi:type="array">
                                                             <item name="children" xsi:type="array">
-                                                                <item name="authorizenet" xsi:type="array">
+                                                                <item name="authorizenet_directpost" xsi:type="array">
                                                                     <item name="children" xsi:type="array">
-                                                                        <item name="before-place-order" xsi:type="array">
-                                                                            <item name="children" xsi:type="array">
-                                                                                <item name="sd_purchaseorder" xsi:type="array">
-                                                                                    <item name="component" xsi:type="string">SomethingDigital_PurchaseOrderNumber/js/view/purchaseorder</item>
-                                                                                    <item name="sortOrder" xsi:type="string">100</item>
-                                                                                    <item name="displayArea" xsi:type="string">before-place-order</item>
-                                                                                </item>
-                                                                            </item>
+                                                                        <item name="sd-additional-fields" xsi:type="array">
+                                                                            <item name="component" xsi:type="string">SomethingDigital_PurchaseOrderNumber/js/view/purchaseorder</item>
+                                                                            <item name="provider" xsi:type="string">checkoutProvider</item>
+                                                                            <item name="displayArea" xsi:type="string">sd-additional-fields</item>
                                                                         </item>
                                                                     </item>
                                                                 </item>

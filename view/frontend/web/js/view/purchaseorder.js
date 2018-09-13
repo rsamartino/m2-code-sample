@@ -5,6 +5,7 @@ define([
     return Component.extend({
         defaults: {
             template: 'SomethingDigital_PurchaseOrderNumber/purchaseorder',
+            isVisible: true,
         },
 
         initialize: function () {
