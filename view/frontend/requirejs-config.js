@@ -9,6 +9,9 @@ var config = {
             'Magento_Checkout/js/action/set-payment-information': {
                 'SomethingDigital_PurchaseOrderNumber/js/model/place-order-mixin': true
             },
+            'AuthorizeNet_CreditCard/js/view/payment/method-renderer/creditcard': {
+                'SomethingDigital_PurchaseOrderNumber/js/view/payment/method-renderer/creditcard-mixin': true
+            }
         },
     },
 };
