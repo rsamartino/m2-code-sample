@@ -3,6 +3,7 @@
     <module name="SomethingDigital_PurchaseOrderNumber" setup_version="1.0.0">
          <sequence>
             <module name="Magento_Authorizenet"/>
-        </sequence>
+            <module name="AuthorizeNet_CreditCard"/>
+         </sequence>
     </module>
 </config>
