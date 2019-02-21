@@ -16,6 +16,15 @@ define([
 
                     return this;
                 },
+
+                /**
+                 * add po_number to data object
+                 */
+                getData: function () {
+                    var data = this._super();
+                    data.po_number = this.purchaseOrderNumber();
+                    return data;
+                }
             });
         }
     }
