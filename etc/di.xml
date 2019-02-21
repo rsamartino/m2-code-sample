@@ -3,4 +3,7 @@
     <type name="Magento\Payment\Model\Method\Cc">
         <plugin name="somethingdigital_purchaseordernumber_magento_payment_model_method_cc" type="SomethingDigital\PurchaseOrderNumber\Plugin\PaymentMethodCc"/>
     </type>
+    <type name="Magento\Checkout\Model\PaymentInformationManagement">
+        <plugin name="somethingdigital_purchaseordernumber_magento_paymentInformationManagement" type="SomethingDigital\PurchaseOrderNumber\Plugin\PaymentInformationManagement"/>
+    </type>
 </config>
