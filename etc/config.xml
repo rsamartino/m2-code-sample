@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <anet_creditcard>
+                <paymentInfoKeys>transactionId,cardType,cardNumber,avsResultCode,authCode,cvvResultCode,cavvResultCode,Enrolled,CAVV,ECIFlag,PAResStatus,SignatureVerification,XID,UCAFIndicator,FDSFilterAction,FDSFilters,poNumber</paymentInfoKeys>
+                <paymentAdditionalInformationKeys>opaque_data,cardExpYear,cardExpMonth,cvvResultCode,cavvResultCode,FDSFilterAction,FDSFilters,poNumber</paymentAdditionalInformationKeys>
+            </anet_creditcard>
+        </payment>
+    </default>
+</config>
