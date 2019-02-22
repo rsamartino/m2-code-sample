@@ -23,6 +23,7 @@ define([
                 getData: function () {
                     var data = this._super();
                     data.po_number = this.purchaseOrderNumber();
+                    data.additional_data.poNumber = this.purchaseOrderNumber();
                     return data;
                 }
             });
